@@ -8,7 +8,7 @@ let convertor = {
             alert('Enter valid number of years');
             this.menu();
         } else {
-            alert(`Your dog years to human years is ${this.years = dogYears / this.years}`)
+            alert(`Your dog years to human years is ${dogYears / this.years}`)
             this.menu();
         }
     },
@@ -21,7 +21,7 @@ let convertor = {
             this.menu();
         } else {
             console.log(humanYears)
-            alert(`Your human years to dog years is ${this.years = humanYears * this.years}`)
+            alert(`Your human years to dog years is ${humanYears * this.years}`)
             this.menu();
         }
     },
