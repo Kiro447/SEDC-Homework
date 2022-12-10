@@ -10,11 +10,11 @@ const atm = {
             alert('Enter a valid amount you want to withdraw');
             this.menu();
         } else if (withdraw > this.balance) {
-            alert('Your withdraw amount is higher than your balance');
+            alert('Not enough money');
             this.menu();
         } else {
             alert(`You have withdrawn ${withdraw}$`)
-            this.balance -= withdraw ;
+            this.balance -= withdraw;
             this.currentBalance();
         }
     },
@@ -30,9 +30,6 @@ const atm = {
             this.balance += deposit;
             this.currentBalance();
         }
-    },
-    windowClose: function closeOpenedWindow() {
-        openedWindow.close();
     },
     menu: function (menu) {
         let userInput = parseInt(prompt('Enter 1 for withdraw, Enter 2 for deposit, Enter 3 for balance check, Enter 4 for exit'), 10);
