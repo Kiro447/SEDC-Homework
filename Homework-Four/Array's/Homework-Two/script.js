@@ -1,4 +1,4 @@
-let arrayOfNums = [1, 2, 3, 4, 5, '9',];
+let arrayOfNums = [1, 2, 3, 4, 5, '9'];
 
 function validateNumber(array) {
     if (array.filter(array => typeof array == 'string')) {
