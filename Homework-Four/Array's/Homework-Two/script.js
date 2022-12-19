@@ -1,20 +1,25 @@
-let arrayOfNums = [1, 2, 3, 4, 5, '9'];
+var numbers = [1, 2, 3, 4, 5, 'sdsd'];
 
-function validateNumber(array) {
-    if (array.filter(array => typeof array == 'string')) {
-        array.pop(array)
-        sumOfArray(array);
-    }
-
+function validateNumber(numbers) {
+  if (typeof numbers !== "number" || (isNaN(numbers))) {
+    return false;
+  }
+  else {
+    return true;
+  }
 }
-// ako ima poveke od 2 stringa pagja
-function sumOfArray(array) {
-    let total = 0
-    for (let i = 0; i < array.length; i++) {
-        total += array[i];
+function sum(numbers) {
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (!validateNumber(numbers[i])) {
+      console.log('Your array consists of other types than numbers');
+      return;
     }
-    console.log(`The total sum of the array is ${total}`);
+    total += numbers[i]
+  }
+  console.log(`The total sum of the array is ${total}`)
 }
 
+sum(numbers);
 
-validateNumber(arrayOfNums)
+

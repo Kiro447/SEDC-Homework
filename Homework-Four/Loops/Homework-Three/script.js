@@ -1,9 +1,12 @@
 const arrayOfStrings = ['Hello', 'there', 'students', 'of', 'SEDC', '!'];
 
 
-function arrayMerger(array) {
-    const newArray = array.join(' ')
-    console.log(newArray)
+function arrayMerger(arrayOfString) {
+    let newArr = ""
+    for (nums of arrayOfString) {
+        newArr = newArr + nums + " ";
+    }
+    alert(newArr)
 }
 
 arrayMerger(arrayOfStrings);
