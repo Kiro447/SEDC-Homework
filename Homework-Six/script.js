@@ -15,9 +15,7 @@ buttonGen.addEventListener('click', ()=>{
     for (let i = 0 ; i < row; i++){
         let rowCreated = document.createElement('tr');
         rowCreated.style = "border: 1px solid black; height: 3rem;";;
-        console.log(row);
         for (let j = 0 ; j < column ; j++){
-            console.log(j);
             let columnCreated = document.createElement('td');
             columnCreated.style = "border: 1px solid black; font-size: 1em; width: 10rem"
             columnCreated.innerText = `Row-${i+1} column-${j+1}`;
