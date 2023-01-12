@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>calc</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal-body">
+            <div class="cal-display">
+                <div class="cal-operation" fOperation></div>
+                <div class="cal-typed" sOperation></div>
+            </div>
+
+            <div class="cal-button-row">
+                <button class="button c" id="delete" clear>C</button>
+                <button class="button c" id="backspace" delete>Del</button>
+                <button class="operator" operator>÷</button>
+                <button class="number" number>7</button>
+                <button class="number" number>8</button>
+                <button class="number" number>9</button>
+                <button class="operator" operator>*</button>
+                <button class="number" number>4</button>
+                <button class="number" number>5</button>
+                <button class="number" number>6</button>
+                <button class="operator" operator>-</button>
+                <button class="number" number>1</button>
+                <button class="number" number>2</button>
+                <button class="number" number>3</button>
+                <button class="operator" id="plus" operator>+</button>
+                <button class="decimal" point>.</button>
+                <button class="number" id="zero" number>0</button>
+                <button class="equal" id="equal" equals>=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</html>
